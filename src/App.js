@@ -48,7 +48,7 @@ function App() {
     /* se è null, non abbiamo una scelta per choiceOne, se condizione è falsa, viene eseguita la condizione a destra dei ":" 
        se non è null allora ha un valore e quindi è già stata selezionata la prima scelta e sarà true, se è true, si verifica la condizione a sinistra dei ":"
     */
-   // Risoluzione del bug per il quale se clicchi velocemente una carta, ti scopre anche l'altra, mettendo un ulteriore controllo sull'id della carta girata
+   // Risoluzione del bug per il quale se clicchi velocemente una carta, ti scopre anche la gemella associata, mettendo un ulteriore controllo sull'id della carta girata
     if(card.id === choiceOne?.id) return;
     choiceOne ? setChoiceTwo(card) : setChoiceOne(card) 
   }
